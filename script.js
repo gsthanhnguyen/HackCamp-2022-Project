@@ -1,31 +1,31 @@
 
 // data structure for storing questions: array and storing each question: dictionary
-const questions = [
-  {
-    question:
-      "question ...",
-    a: "...",
-    b: "...",
-    c: "...",
-    d: "...",
-  },
-  {
-    question:
-      "question ...",
-    a: "...",
-    b: "...",
-    c: "...",
-    d: "...",
-  },
-  {
-    question:
-      "question ...",
-    a: "...",
-    b: "...",
-    c: "...",
-    d: "...",
-  } 
-];
+// const questions = [
+//   {
+//     question:
+//       "question ...",
+//     a: "...",
+//     b: "...",
+//     c: "...",
+//     d: "...",
+//   },
+//   {
+//     question:
+//       "question ...",
+//     a: "...",
+//     b: "...",
+//     c: "...",
+//     d: "...",
+//   },
+//   {
+//     question:
+//       "question ...",
+//     a: "...",
+//     b: "...",
+//     c: "...",
+//     d: "...",
+//   } 
+// ];
 
 // assign variables to pages
 const startPage = document.querySelector('#start-page')
@@ -54,8 +54,3 @@ let questionCount;
 
 loadQuestions();
 
-function loadQuestions() {
-  if (questionCount < questions.length) {
-    
-  }
-}
