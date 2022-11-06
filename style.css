@@ -1,0 +1,81 @@
+*{
+  font-family: Ariel;
+}
+
+body{
+  background: #f5eee1;
+}
+
+.title{
+  text-align: center;
+  font-family: Courier New;
+  font-weight: 600;
+  }
+.description{
+  text-align: center;
+}
+
+.start{
+  background: white;
+  color: black; 
+  display: block; 
+  height: 40px;
+  width: 145px;
+  border-radius: 20px;
+  margin: 20px auto;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 550;
+  line-height: 20px;
+  font-size: 13px; 
+  transition: 0.2s;
+  font-family: monaco;
+  border: none;
+  ;
+}
+
+.start:focus{
+  outline: none;
+}
+
+.start:hover{
+  background: #79bf67;
+  color: white;
+}
+
+.profilepicture{
+  height: 100px;
+  width: 100px; 
+  border: 1px solidwhite; 
+  display: block; 
+  margin-right: auto; 
+  margin-left: auto;
+}
+
+.submit{
+  background: white;
+  color: black; 
+  display: block; 
+  height: 40px;
+  width: 145px;
+  border-radius: 20px;
+  margin: 20px auto;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 550;
+  line-height: 20px;
+  font-size: 13px; 
+  transition: 0.2s;
+  font-family: monaco;
+  border: none;
+  ;
+}
+
+.submit:focus{
+  outline: none;
+}
+
+.submit:hover{
+  background: #79bf67;
+  color: white;
+}
