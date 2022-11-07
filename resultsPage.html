@@ -10,10 +10,12 @@
 </head>
 
 <body>
-  <div class="results content">
+  <div class="resultsPage content">
     <h2 class="title">Supplements</h2>
     <p class="description"><span id="username"></span>, here are our suggestions:</p>
-    <p id="results"></p>
+    <center>
+      <p id="results"></p>
+    </center>
   </div>
   
   <script>
@@ -21,9 +23,25 @@
     var name = searchParams.get("name");
     document.getElementById("username").innerHTML = name;
     var text = "";
+    // if a button is clicked, add the list of supplements
     if (searchParams.get("immunity") == 1) {
       // immunity is checked
       text += "immunity supplements";
+    }
+    if (searchParams.get("sleep") == 1) {
+      text += "sleep supplements";
+    }
+    if (searchParams.get("energy") == 1) {
+      text += "energy supplements";
+    }
+    if (searchParams.get("fitness") == 1) {
+      text += "fitness supplements";
+    }
+    if (searchParams.get("gut health") == 1) {
+      text += "gut health supplements";
+    }
+    if (searchParams.get("hair, skin and nails") == 1) {
+      text += "HSN supplements";
     }
 
     document.getElementById("results").innerHTML = text;

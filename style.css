@@ -10,6 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+/*   animation: expand 0.8s ease forwards; */
 }
 
 .content {
@@ -24,7 +25,7 @@ body {
   margin-top: -100px;
   margin-left: -250px; */
   
-/*   animation: expand .8s ease forwards; */
+  animation: expand .8s ease forwards;
 }
 
 .profilepicture {
@@ -35,7 +36,8 @@ body {
   margin-right: auto; 
   margin-left: auto;
 
-  animation: slideUp 2s ease forwards;
+/*   animation: slideUp 2s ease forwards; */
+/*   animation: expand 0.8s ease forwards; */
 }
 
 .start_title {
@@ -43,13 +45,15 @@ body {
   font-family: Courier New;
   font-weight: 600;
   transform: translateY(300px);
-  animation: slideUp 0.6s ease forwards;
+/*   animation: slideUp 0.6s ease forwards; */
+/*   animation: expand 0.8s ease forwards; */
 }
 
 .start_description {
   text-align: center;
   transform: translateY(300px);
-  animation: slideUp 0.6s ease forwards;
+/*   animation: slideUp 0.6s ease forwards; */
+/*   animation: expand 0.8s ease forwards; */
 }
 
 .start {
@@ -68,7 +72,8 @@ body {
 /*   transition: 0.2s; */
   font-family: monaco;
   border: none;
-  animation: slideUp 0.6s ease forwards;
+/*   animation: slideUp 0.6s ease forwards; */
+/*   animation: expand 0.8s ease forwards; */
 }
 
 .start:focus {
@@ -82,16 +87,17 @@ body {
 
 .title {
   text-align: center;
-  font-family: Courier New;
+/*   font-family: Courier New; */
+  font-family: monaco;
   font-weight: 600;
-  transform: translateY(300px);  
-  animation: expand 0.8s ease forwards;
+/*   transform: translateY(300px);   */
+/*   animation: expand 0.8s ease forwards; */
 }
 
 .description {
   text-align: center;
-  transform: translateY(300px);
-  animation: expand 0.8s ease forwards;
+/*   transform: translateY(300px); */
+/*   animation: expand 0.8s ease forwards; */
 }
 
 .submit {
@@ -110,7 +116,7 @@ body {
   transition: 0.2s;
   font-family: monaco;
   border: none;
-  
+  animation: expand 0.8s ease forwards;
 }
 
 .submit:focus {
@@ -189,13 +195,13 @@ body {
 
 /* end of transition */
 
-.button1{
+.button1 {
   background: white;
   color: black;
   height: 150px;
   width: 150px;
   border-radius: 20px;
-  margin: 20px auto;
+  margin: 7px 5px;
   text-decoration: none;
   text-align: center;
   font-weight: 600;
@@ -216,7 +222,8 @@ body {
 .buttonContainer {
   display: flex;
   flex-wrap: wrap;
-  
+  justify-content:center;
+  animation: expand 0.8s ease forwards;
 }
 
 .buttonContainer label {

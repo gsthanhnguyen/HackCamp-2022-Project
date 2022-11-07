@@ -15,7 +15,7 @@
       <input type="hidden" id="nameinput" name="name">
       <input type="hidden" id="age" name="age">
       <input type="hidden" id="gender" name="gender">
-      
+
       <h2 class="title">What are your concerns?</h2>
       <p class="description">Select one or more</p>
       <br>
@@ -28,7 +28,7 @@
             <span class="button1_text">Immunity</span>
           </div>
         </label>
-  
+
         <label>
           <input type="checkbox" name="sleep" value="1">
           <div class="button1">
@@ -36,7 +36,7 @@
             <span class="button1_text">Sleep</span>
           </div>
         </label>
-  
+
         <label>
           <input type="checkbox" name="energy" value="1">
           <div class="button1">
@@ -52,7 +52,7 @@
             <span class="button1_text">Fitness</span>
           </div>
         </label>
- 
+
         <label>
           <input type="checkbox" name="gut health" value="1">
           <div class="button1">
@@ -68,10 +68,10 @@
             <span class="button1_text">Hair, Skin and Nails</span>
           </div>
         </label>
-        
+
       </div>
-      
-        <input type="submit" class="results" value="Results!"></input>
+
+      <input type="submit" class="submit" />
     </form>
   </div>
 
@@ -81,7 +81,7 @@
     document.getElementById("age").value = searchParams.get('age');
     document.getElementById("gender").value = searchParams.get('gender');
   </script>
-  
+
 </body>
 
 </html>
