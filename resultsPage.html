@@ -13,23 +13,35 @@
   <div class="resultsPage content">
     <h2 class="title">Supplements</h2>
     <p class="description"><span id="username"></span>, here are our suggestions:</p>
-    <center>
-      <p id="results"></p>
-    </center>
+    <br>
+    <div class="resultImageContainer">
+      <center>
+        <p id="results"></p>
+        <img width="50px" height="50px" class="image_icon" id="img1" src=img1>
+<!--          <img width="50px" height="50px" class="image_icon" id="img2" src=img2> -->
+      </center>
+    </div>
   </div>
   
   <script>
     let searchParams = new URLSearchParams(location.search);
     var name = searchParams.get("name");
     document.getElementById("username").innerHTML = name;
+    
     var text = "";
+    var img1 = "";
+    var img2 = "";
+    var img3 = "";
+    
     // if a button is clicked, add the list of supplements
     if (searchParams.get("immunity") == 1) {
-      // immunity is checked
       text += "immunity supplements";
+      console.log("Hello")
+      document.getElementById("img1").src = "supplements/sup_immunity.png"
     }
     if (searchParams.get("sleep") == 1) {
       text += "sleep supplements";
+      // document.getElementById("img2").src = "supplements/sup_sleep.jpg"
     }
     if (searchParams.get("energy") == 1) {
       text += "energy supplements";
@@ -44,7 +56,7 @@
       text += "HSN supplements";
     }
 
-    document.getElementById("results").innerHTML = text;
+    // document.getElementById("results").innerHTML = text;
   </script>
 
 </body>
