@@ -10,11 +10,24 @@
 </head>
 
 <body>
-  <div class="about">
+  <div class="results content">
     <h2 class="title">Supplements</h2>
-    <p class="description">Here are our suggestions:</p>
+    <p class="description"><span id="username"></span>, here are our suggestions:</p>
+    <p id="results"></p>
   </div>
-  <script src="js/script.js"></script>
+  
+  <script>
+    let searchParams = new URLSearchParams(location.search);
+    var name = searchParams.get("name");
+    document.getElementById("username").innerHTML = name;
+    var text = "";
+    if (searchParams.get("immunity") == 1) {
+      // immunity is checked
+      text += "immunity supplements";
+    }
+
+    document.getElementById("results").innerHTML = text;
+  </script>
 
 </body>
 

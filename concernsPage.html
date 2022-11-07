@@ -10,43 +10,78 @@
 </head>
 
 <body>
-  <div class="about">
-    <h2 class="title">Concerns</h2>
-    <p class="description">What are your concerns? </p>
+  <div class="concerns content">
+    <form action="./resultsPage.html">
+      <input type="hidden" id="nameinput" name="name">
+      <input type="hidden" id="age" name="age">
+      <input type="hidden" id="gender" name="gender">
+      
+      <h2 class="title">What are your concerns?</h2>
+      <p class="description">Select one or more</p>
+      <br>
 
-    <!--Icon selections-->
-    <button class="button1">
-      <img width="50px" height="50px" class="button_icon1" src="images2/immune.png">
-      <span class="button1_text">Immunity</span>
-    </button>
-    <button class="button2">
-      <img width="50px" height="50px" class="button_icon2" src="images2/moon.png">
-      <span class="button2_text">Sleep</span>
-    </button>
-    <button class="button3" target="_blank">
-      <img width="50px" height="50px" class="button_icon3" src="images2/energized.png">
-      <span class="button3_text">Energy</span>
-    </button>
-    <button class="button4" target="_blank">
-      <img width="50px" height="50px" class="button_icon4" src="images/fitness.png">
-      <span class="button4_text">Fitness</span>
-    </button>
-    <button class="button5" target="_blank">
-      <img width="50px" height="50px" class="button_icon5" src="images2/guts.png">
-      <span class="button5_text">Gut Health</span>
-    </button>
-    <button class="button6" target="_blank">
-      <img width="50px" height="50px" class="button_icon6" src="images2/hairdresser.png">
-      <span class="button6_text">Hair, Skin and Nails</span>
-    </button>
+      <div class="buttonContainer">
+        <label>
+          <input type="checkbox" name="immunity" value="1">
+          <div class="button1">
+            <img width="50px" height="50px" class="button1_icon" src="images2/immune.png">
+            <span class="button1_text">Immunity</span>
+          </div>
+        </label>
+  
+        <label>
+          <input type="checkbox" name="sleep" value="1">
+          <div class="button1">
+            <img width="50px" height="50px" class="button1_icon" src="images2/moon.png">
+            <span class="button1_text">Sleep</span>
+          </div>
+        </label>
+  
+        <label>
+          <input type="checkbox" name="energy" value="1">
+          <div class="button1">
+            <img width="50px" height="50px" class="button1_icon" src="images2/energized.png">
+            <span class="button1_text">Energy</span>
+          </div>
+        </label>
 
-    <br><br>
-    <a href="./resultsPage.html">
-      <button class="results">Results!</button>
-    </a>
+        <label>
+          <input type="checkbox" name="fitness" value="1">
+          <div class="button1">
+            <img width="50px" height="50px" class="button1_icon" src="images/fitness.png">
+            <span class="button1_text">Fitness</span>
+          </div>
+        </label>
+ 
+        <label>
+          <input type="checkbox" name="gut health" value="1">
+          <div class="button1">
+            <img width="50px" height="50px" class="button1_icon" src="images2/guts.png">
+            <span class="button1_text">Gut Health</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" name="hair, skin and nails" value="1">
+          <div class="button1">
+            <img width="50px" height="50px" class="button1_icon" src="images2/hairdresser.png">
+            <span class="button1_text">Hair, Skin and Nails</span>
+          </div>
+        </label>
+        
+      </div>
+      
+        <input type="submit" class="results" value="Results!"></input>
+    </form>
   </div>
-  <script src="js/script.js"></script>
 
+  <script>
+    let searchParams = new URLSearchParams(location.search);
+    document.getElementById("nameinput").value = searchParams.get('name');
+    document.getElementById("age").value = searchParams.get('age');
+    document.getElementById("gender").value = searchParams.get('gender');
+  </script>
+  
 </body>
 
 </html>
