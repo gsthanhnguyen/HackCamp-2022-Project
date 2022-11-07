@@ -1,5 +1,11 @@
 # HackCamp-2022-Project
-HackCamp - Western Canada’s largest beginner-friendly hackathon
+HackCamp focuses on encouraging beginners and people who are curious about technology to work on a project that focuses on these three main pillars including inclusivity, diversity, and accessibility
+
+## Try out our project
+https://HackCamp-Project.jsphn.repl.com
+
+
+
 ## Inspiration
 <p>We were inspired to make this project as this was our first hackathon! We wanted to create something that could ultimately help people in some time of way, and we came up with this idea!<br></p>
 
@@ -22,7 +28,4 @@ We are proud that we got this running, and had some cool transitions in it too!
 <p>TBA</p>
 
 ## Built With
-<p> css, html, javascript
-
-## Try it out
-https://HackCamp-Project.jsphn.repl.co
+<p> CSS, HTML, Javascript
